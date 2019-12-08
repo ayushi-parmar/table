@@ -6,7 +6,7 @@
 
 
  
- j<div class="container">
+ <div class="container">
 <form [formGroup]="registrationForm" *ngIf="show">
 <div class="form-group">
   <label>username</label>
@@ -52,7 +52,7 @@
         </td>
 
         <button *ngIf="!user.edit" on-click="delete(i)">Delete</button>
-        <button  (click)="edit(user)" *ngIf="!user.edit">Edit</button> 
+        <button  (click)="edit(user)" *ngIf="!user .edit">Edit</button> 
         <button *ngIf="user.edit" (click)="save(user)">save</button>
         
       </tr>
